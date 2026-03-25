@@ -14,24 +14,15 @@ export const metadata: Metadata = {
   description: 'Psicólogo Richard - Cuidar da sua mente é o primeiro passo para uma vida melhor. Atendimento em terapia individual, ansiedade, depressão e consultas online.',
   generator: 'v0.app',
   keywords: ['psicólogo', 'terapia', 'ansiedade', 'depressão', 'saúde mental', 'bem-estar'],
-  icons: {
-    icon: [
-      {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
-      },
-    ],
-    apple: '/apple-icon.png',
-  },
-}
+
+    icons: {
+  icon: [
+    { url: '/icon.png', sizes: '32x32', type: 'image/png' },
+    { url: '/icon.png', sizes: '192x192', type: 'image/png' },
+  ],
+  apple: '/icon.png',
+},
+  }
 
 export const viewport: Viewport = {
   themeColor: '#3b82f6',
