@@ -62,6 +62,7 @@ export function useAppointments() {
         phone: appointment.clientPhone,
         date: appointment.date,
         time: appointment.time,
+         status: appointment.status || "pending", // 👈 ADICIONA ISSO
       }
     ])
 
@@ -75,14 +76,22 @@ export function useAppointments() {
 
   // 🔥 ATUALIZAR
  const updateAppointment = async (id: string, updates: Partial<Appointment>) => {
-  const { data, error } = await supabase
+  const dbUpdates: any = {}
+
+  if (updates.clientName) dbUpdates.name = updates.clientName
+  if (updates.clientEmail) dbUpdates.email = updates.clientEmail
+  if (updates.clientPhone) dbUpdates.phone = updates.clientPhone
+  if (updates.date) dbUpdates.date = updates.date
+  if (updates.time) dbUpdates.time = updates.time
+  if (updates.status) dbUpdates.status = updates.status
+
+  const { error } = await supabase
     .from("appointments")
-    .update(updates)
+    .update(dbUpdates)
     .eq("id", id)
-    .select() // 👈 IMPORTANTE
 
   if (error) {
-    console.log(error)
+    console.log("Erro ao atualizar:", error)
     return
   }
 
