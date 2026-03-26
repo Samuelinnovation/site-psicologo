@@ -30,7 +30,7 @@ export function useAppointments() {
       console.log("Erro ao buscar:", error)
     } else {
       const formatted = (data || []).map((item: any, index: number) => ({
-        id: item.id || index.toString(),
+        id: item.id,
         clientName: item.name,
         clientEmail: item.email,
         clientPhone: item.phone,
