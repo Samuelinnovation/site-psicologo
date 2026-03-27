@@ -104,6 +104,7 @@ export function useAppointments() {
 }
   // 🔥 DELETAR
   const deleteAppointment = async (id: string) => {
+    console.log("CLICOU DELETE, ID:", id)
     const { error } = await supabase
       .from("appointments")
       .delete()
