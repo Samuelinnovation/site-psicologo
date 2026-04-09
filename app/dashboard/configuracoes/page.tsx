@@ -17,7 +17,7 @@ export default function ConfiguracoesPage() {
     crp: "05/72067",
     email: "sourarichardsouza@gmail.com",
     phone: "(24) 99855-4197",
-    bio: "Psicólogo clínico com anos de experiência, especializado em Terapia Cognitivo-Comportamental.",
+    bio: "Sou psicólogo clínico, graduado há três anos, com atuação fundamentada na psicanálise.",
   })
   const [notifications, setNotifications] = useState({
     email: true,
