@@ -67,8 +67,7 @@ export default function SobrePage() {
                     e merece um atendimento personalizado, respeitando seu tempo e suas necessidades.
                   </p>
                   <p className="leading-relaxed">
-                    Minha abordagem é baseada na Terapia Cognitivo-Comportamental (TCC), 
-                    uma das mais eficazes para tratamento de ansiedade, depressão e diversos 
+                    Minha abordagem é baseada na Psicanálise, uma das mais eficazes para tratamento de ansiedade, depressão e diversos 
                     outros desafios emocionais. Busco criar um ambiente seguro e acolhedor 
                     onde você possa se expressar livremente.
                   </p>
