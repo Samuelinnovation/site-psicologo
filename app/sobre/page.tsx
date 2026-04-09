@@ -15,7 +15,7 @@ const credentials = [
   {
     icon: Award,
     title: "Especialização",
-    description: "Especialista em Terapia Cognitivo-Comportamental (TCC)",
+    description: "Especialista em Psicanálise",
   },
   {
     icon: Heart,
